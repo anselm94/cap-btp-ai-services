@@ -1,0 +1,19 @@
+{
+  "name": "cap-btp-ai-services",
+  "version": "1.0.0",
+  "description": "A reference CAP application integrating with SAP BTP AI Service Offerings using official SDKs",
+  "repository": "https://github.com/anselm94/cap-btp-ai-services",
+  "license": "Apache-2.0",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^8.9.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1.11.0",
+    "@cap-js/cds-types": "^0.10.0"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  }
+}
