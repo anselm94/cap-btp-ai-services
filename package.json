@@ -11,9 +11,16 @@
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1.11.0",
-    "@cap-js/cds-types": "^0.10.0"
+    "@cap-js/cds-types": "^0.10.0",
+    "@cap-js/cds-typer": ">=0.1",
+    "@types/node": "^22.0.0",
+    "typescript": "^5"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch": "cds-tsx w"
+  },
+  "imports": {
+    "#cds-models/*": "./@cds-models/*/index.js"
   }
 }
