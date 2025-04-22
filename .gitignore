@@ -135,4 +135,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# added by cds
 @cds-models
+.cdsrc-private.json

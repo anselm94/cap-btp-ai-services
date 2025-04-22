@@ -6,19 +6,23 @@
   "license": "Apache-2.0",
   "private": true,
   "dependencies": {
+    "@sap-ai-sdk/orchestration": "^1.12.0",
     "@sap/cds": "^8.9.2",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "zod": "^3.24.3",
+    "zod-to-json-schema": "^3.24.5"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1.11.0",
-    "@cap-js/cds-types": "^0.10.0",
     "@cap-js/cds-typer": ">=0.1",
+    "@cap-js/cds-types": "^0.10.0",
+    "@cap-js/sqlite": "^1.11.0",
     "@types/node": "^22.0.0",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   },
   "scripts": {
     "start": "cds-serve",
-    "watch": "cds-tsx w"
+    "watch": "cds-tsx watch --profile hybrid"
   },
   "imports": {
     "#cds-models/*": "./@cds-models/*/index.js"
