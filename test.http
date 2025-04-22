@@ -55,3 +55,11 @@ Content-Type: application/json
 ###################################
 #
 
+### semanticSearch
+# @name semanticSearch
+POST {{server}}/odata/v4/btpaicore-document-grounding/semanticSearch
+Content-Type: application/json
+
+{
+  "text": "Paul Graham taking art classes"
+}

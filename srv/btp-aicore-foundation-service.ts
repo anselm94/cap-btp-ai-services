@@ -15,6 +15,9 @@ export class BTPAICoreFoundationService extends cds.ApplicationService {
       "text-embedding-3-small"
     );
 
+    /**
+     * Chat completion generation via OpenAI client
+     */
     this.on(chatCompletion, async (req) => {
       const { text } = req.data;
       if (!text) return req.reject(400, "Missing required parameters");
@@ -32,8 +35,7 @@ export class BTPAICoreFoundationService extends cds.ApplicationService {
     });
 
     /**
-     * A detailed Orchestration configuration with structured JSON output. Also
-     * has data masking, content input/output filtering.
+     * Text embedding generation via OpenAI client
      */
     this.on(embedding, async (req) => {
       const { text } = req.data;
