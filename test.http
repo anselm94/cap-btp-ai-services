@@ -27,3 +27,31 @@ Content-Type: application/json
 {
   "inputParams": "{\"document_type\": \"Earning Release Report\",\"company_name\": \"Microsoft Corp.\",\"quarter\": \"Q1\",\"fiscal_year\": \"2023\",\"excerpt\": \"Microsoft Corp. today announced the following results for the quarter ended September 30, 2023, as compared to the corresponding period of last fiscal year:- Revenue was $56.5 billion and increased 13% (up 12% in constant currency)- Operating income was $26.9 billion and increased 25% (up 24% in constant currency)- Net income was $22.3 billion and increased 27% (up 26% in constant currency)- Diluted earnings per share was $2.99 and increased 27% (up 26% in constant currency)\"}"
 }
+
+#
+###################################
+#
+
+### chatCompletion
+# @name chatCompletion
+POST {{server}}/odata/v4/btpaicore-foundation/chatCompletion
+Content-Type: application/json
+
+{
+  "text": "How is SAP an ERP company?"
+}
+
+
+### embedding
+# @name embedding
+POST {{server}}/odata/v4/btpaicore-foundation/embedding
+Content-Type: application/json
+
+{
+  "text": "SAP is an ERP company"
+}
+
+#
+###################################
+#
+

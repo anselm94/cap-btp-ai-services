@@ -6,6 +6,7 @@
   "license": "Apache-2.0",
   "private": true,
   "dependencies": {
+    "@sap-ai-sdk/foundation-models": "^1.12.0",
     "@sap-ai-sdk/orchestration": "^1.12.0",
     "@sap/cds": "^8.9.2",
     "express": "^4.18.2",
